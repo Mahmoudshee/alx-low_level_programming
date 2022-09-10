@@ -5,7 +5,10 @@
  * main - print if the number is positive, zero, or negative
  *
  * Description: using the main function
- * this pr)
+ * this programm prints "programming is positive, zero, or negative
+ * Return: 0
+ */
+int main(void)
 {
 int n;
 int 1;
@@ -20,7 +23,7 @@ if (1 > 5)
 }
 else if (1 == 0)
 {
-	printf("Last digit of %d is %d and is 0\n", n, 1);
+	printf("Last digit of %d is %d and is 0\n", 1);
 }
 else
 {
@@ -28,3 +31,5 @@ else
 }
 return (0);
 }
+
+
