@@ -5,10 +5,7 @@
  * main - print if the number is positive, zero, or negative
  *
  * Description: using the main function
- * this programm prints "programming is positive, zero, or negative
- * Return: 0
- */
-int main(void)
+ * this pr)
 {
 int n;
 int 1;
