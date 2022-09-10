@@ -2,7 +2,7 @@
 /**
  * main - printing numbers from 0-9 with commas and space between them
  * Desription: using the main function
- * the programm prints 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+ * the programm prints "0, 1, 2, 3, 4, 5, 6, 7, 8, 9"
  * Return: 0
  */
 int main(void)
