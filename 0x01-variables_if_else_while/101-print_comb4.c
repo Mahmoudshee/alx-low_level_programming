@@ -1,6 +1,9 @@
 #include <stdio.h>
 /**
- * main - program that prints all possible different combinations of 3 digits
+ * main - Entry point
+ *
+ * a program that prints all possible different combinations of three digits
+ *
  * Return: 0
  */
 int main(void)
@@ -28,8 +31,11 @@ int main(void)
 				putchar(' ');
 			}
 		}
+
 		c++
 	}
+
 	putchar('\n');
+
 	return (0);
 }
