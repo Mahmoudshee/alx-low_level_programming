@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - Entry point
+ * main - print possible combo of 3
  *
  * a program that prints all possible different combinations of three digits
  *
@@ -32,7 +32,7 @@ int main(void)
 			}
 		}
 
-		c++
+		c++;
 	}
 
 	putchar('\n');
