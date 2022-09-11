@@ -1,35 +1,35 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
-
 /**
- * main - Entry point
- *
+ * main - program that prints all possible different combinations of 3 digits
  * Return: 0
  */
 int main(void)
 {
-	int p, q;
+	int c = 0;
+	int f_d;
+	int m_d;
+	int l_d;
 
-	for (p = 0; p <= 98; p++)
+	while (c <= 999)
 	{
-		for (q = 0; q <= 99; q++)
+		f_d = (c / 100 + '0');
+		m_d = (c / 10 % 10 + '0');
+		l_d = (c % 10 + '0');
+
+		if ((f_d < m_d) && (m_d < l_d))
 		{
-			putchar((p / 10) + '0');
-			putchar((p % 10) + '0');
-			putchar('');
-			putchar((q / 10) + '0');
-			putchar((q % 10) + 'o');
+			putchar(f_d);
+			putchar(m_d);
+			putchar(l_d);
 
-			if (p == 98 && q == 99)
-				continue;
-
-			putchar(',');
-			putchar(' ');
+			if (c != 789)
+			{
+				putchar(',');
+				putchar(' ');
+			}
 		}
+		c++
 	}
-
 	putchar('\n');
-
 	return (0);
 }
