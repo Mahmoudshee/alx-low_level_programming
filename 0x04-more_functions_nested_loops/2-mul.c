@@ -1,4 +1,4 @@
-#include "mai.h"
+#include "maiin.h"
 
 /**
  * mul - multiplying 2 numbers
