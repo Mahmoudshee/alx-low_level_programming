@@ -2,10 +2,10 @@ include "main.h"
 #include <stdio.h>
 
 /**
- * print_triangle - prints a triangle
+ * print_triangle - prints triangle
+ *
  * @size: size of triangle
  */
-
 void print_triangle(int size)
 {
 	int i;
@@ -28,7 +28,7 @@ void print_triangle(int size)
 			{
 				_putchar('#');
 			}
-			_putchar('n');
+			_putchar('\n');
 		}
 	}
 }
