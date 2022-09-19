@@ -1,5 +1,5 @@
+#include "main.h"
 #include <string.h>
-
 /**
 * puts_half - puts half
 * @str: string param
@@ -14,6 +14,6 @@ void puts_half(char *str)
 	else
 		y = x / 2;
 	for (i = y; i < x; i++)
-		putchar(*(str +i));
+		putchar(str[i]);
 	putchar('\n');
 }
