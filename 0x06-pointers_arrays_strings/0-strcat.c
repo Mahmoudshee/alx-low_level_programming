@@ -3,7 +3,7 @@
 
 /**
  * _strcat - this is a function strcat
- * @dest: firstparam
+ * @dest: first param
  * @src: second param
  * Return: a string
  */
