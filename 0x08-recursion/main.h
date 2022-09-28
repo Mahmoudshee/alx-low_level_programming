@@ -13,6 +13,8 @@ int _sqrt_recursion(int n);
 int helperfunction(int num, int i);
 int is_prime_number(int n);
 int is_palindrome(char *s);
+int _length(char *s);
+int checkp(int i, int lg, char *s);
 int wildcmp(char *s1, char *s2);
 int strlen_no_wilds(char *str);
 void iterate_wild(char **wildstr);
