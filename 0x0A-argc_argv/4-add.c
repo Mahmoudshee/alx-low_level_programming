@@ -1,4 +1,7 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
 
 /**
  * main - Print the name of the program
@@ -11,9 +14,9 @@ int main(int argc, char *argv[])
 {
 	int result = 0, num, i, j, k;
 
-	for (i = 1; i < agrc; i++)
+	for (i = 1; i < argc; i++)
 	{
-		for (j = 0; agrv[i] != '\0'; j++)
+		for (j = 0; argv[i][j] != '\0'; j++)
 		{
 			if (argv[i][j] > '9' || argv[i][j] < '0')
 			{
@@ -23,11 +26,11 @@ int main(int argc, char *argv[])
 		}
 	}
 
-	for (k = 1; k < agrc; k++)
+	for (k = 1; k < argc; k++)
 	{
 		num = atoi(argv[k]);
 		result += num;
 	}
-	printf("%d\n", sum);
+	printf("%d\n", result);
 	return (0);
 }
