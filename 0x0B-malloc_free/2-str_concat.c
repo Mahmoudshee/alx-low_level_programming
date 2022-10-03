@@ -19,7 +19,7 @@ int _strlen(char *s)
 }
 
 /**
- *str_contact - back a pointe to array
+ *str_concat - back a pointe to array
  *@s1: Array one
  *@s2: Array two
  *Return: Always an array dinamic
