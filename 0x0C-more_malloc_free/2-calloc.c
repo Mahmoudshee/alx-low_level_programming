@@ -2,7 +2,7 @@
 #include "main.h"
 /**
  * _calloc - aloocates memory of an array using malloc
- * nmemb: number of elememnt in array
+ * @nmemb: number of elememnt in array
  * @size: size pf element of array
  *
  * Return: NULL is size or nmemb == 0.
