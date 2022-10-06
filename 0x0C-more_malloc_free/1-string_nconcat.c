@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * string_nconcat - concatenate s1 and n bytes of s2; return ptr to string
  * @s1: string 1
@@ -40,6 +41,5 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		p[i] = s2[i - size1];
 	}
 	p[i] = '\0';
-
-return (p);
+	return (p);
 }
