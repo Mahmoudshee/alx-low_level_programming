@@ -1,5 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "main.h"
 /**
  * string_nconcat - concatenate s1 and n bytes of s2; return ptr to string
