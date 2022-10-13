@@ -2,15 +2,16 @@
 #include<stdlib.h>
 
 /**
- *main - print opcodes of a given machine
+ *main - print codes of a given machine
  *@argc: number of arguments.
  *@argv: argument vector.
  *
- *Return: 0.
+ *Return: Always 0.
  */
 int main(int argc, char *argv[])
 {
-	int count, bytes;
+	char *opc = (char *) main;
+	int i, nbytes;
 
 	if (argc != 2)
 	{
@@ -18,19 +19,20 @@ int main(int argc, char *argv[])
 		exit(1);
 	}
 
-	bytes = atoi(argv[1]);
-	if (bytes, 0)
+	nbytes = atoi(argv[1]);
+
+	if (nbytes < 0)
 	{
 		printf("Error\n");
 		exit(2);
 	}
-	for (count = 0; count < bytes; count++)
+
+	for (i = 0; i < nbytes; i++)
 	{
-		printf("%02hhx", *((char *)main + count));
-		if (count < bytes - 1)
+		printf("%02x", opc[i] & 0xFF);
+		if (i != nbytes - 1)
 			printf(" ");
-		else
-			printf("\n");
 	}
+	printf("\n");
 	return (0);
 }
