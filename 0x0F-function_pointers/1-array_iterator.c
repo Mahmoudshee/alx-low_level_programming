@@ -1,5 +1,5 @@
 #include <stdlib.h>
-#include "funtion_pointers"
+#include "function_pointers.h"
 
 /**
  * array_iterator - function tht executes function given as param.

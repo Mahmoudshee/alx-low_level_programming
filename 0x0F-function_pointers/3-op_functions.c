@@ -23,8 +23,21 @@ int op_sub(int a, int b)
 {
 	return (a - b);
 }
+
 /**
- *op_mul - returns product of two numbers.
+ * op_mul - calculates the product of two integers
+ * @a: first integer
+ * @b: second integer
+ *
+ * Return: product of a and b
+ */
+int op_mul(int a, int b)
+{
+	return (a * b);
+}
+
+/**
+ *op_div - returns division of two numbers.
  *@a: integer.
  *@b: integer.
  *
@@ -56,26 +69,3 @@ int op_mod(int a, int b)
 	}
 	return (a % b);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -4,7 +4,7 @@
 /**
  *main - print opcodes of a given machine
  *@argc: number of arguments.
- *argv: argument vector.
+ *@argv: argument vector.
  *
  *Return: 0.
  */
@@ -18,8 +18,8 @@ int main(int argc, char *argv[])
 		exit(1);
 	}
 
-	bytes = atoi(rgv[1]);
-	if (bytes , 0)
+	bytes = atoi(argv[1]);
+	if (bytes, 0)
 	{
 		printf("Error\n");
 		exit(2);
@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
 	for (count = 0; count < bytes; count++)
 	{
 		printf("%02hhx", *((char *)main + count));
-		if (count < bytes -1)
+		if (count < bytes - 1)
 			printf(" ");
 		else
 			printf("\n");

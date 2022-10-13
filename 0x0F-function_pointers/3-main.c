@@ -1,4 +1,5 @@
 #include "3-calc.h"
+#include <stdio.h>
 
 /**
  * main - check arguments
@@ -9,31 +10,38 @@
  */
 int main(int argc, char *argv[])
 {
-	int a = 0, b = 0, res = 0;
-	char s;
+	int arg1, arg2, result;
+	char o;
+	int (*func)(int, int);
 
 	if (argc != 4)
 	{
 		printf("Error\n");
 		exit(98);
 	}
-	/* check if theres only one operator*/
-	if (argv[2][1] != '\0')
+
+	arg1 = atoi(argv[1]);
+	arg2 = atoi(argv[3]);
+
+	func = get_op_function(argv[2]);
+
+	if (!func)
 	{
 		printf("Error\n");
-		exit(98);
-	}
-	
-	s = argv[2][0];
-	if (s != '+' && s != '-' && s != '/' && s != '*' && s != '%')
-	{
-		printf("Error\n");
-		exit(98);
+		exit(99);
 	}
 
-	a = atoi(argv[1]);
-	b = atoi(argv[3]);
-	res = (get_op_func(argv[2]))(a, b);
-	printf("%d\n", res);
+	o = *argv[2];
+
+	if ((o == '/' || o == '%') && arg2 == 0)
+	{
+		printf("Error\n");
+		exit(100);
+	}
+
+	result = func(arg1, arg2);
+
+	printf("%d\n", result);
+
 	return (0);
 }
