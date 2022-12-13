@@ -1,1 +1,1 @@
-0x17-doubly linked lists
+# Solution to tasks on doubly linked list
